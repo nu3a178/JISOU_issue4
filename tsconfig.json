@@ -1,21 +1,7 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "ts-node": {
-    "esm": true,
-    "require": ["tsconfig-paths/register"],
-    "compilerOptions": {
-      "module": "ESNext",
-      "moduleResolution": "Node"
-    }
-  }
 }

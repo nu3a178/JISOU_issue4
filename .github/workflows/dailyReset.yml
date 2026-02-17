@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run jobs
-        run: npx tsx ./batch/index.ts 
+        run: npx tsx --tsconfig ./tsconfig.app.json ./batch/index.ts 
       - name: delete dotenv
         run: rm .env
