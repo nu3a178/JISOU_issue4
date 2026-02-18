@@ -1,4 +1,4 @@
-import { deleteAllUsers, deleteAllUserSkills } from "../src/utils/supabase.ts";
+import { deleteAllUsers, deleteAllUserSkills } from "./supabase_batch.ts";
 
 const run = async () => {
   await deleteAllUserSkills();
