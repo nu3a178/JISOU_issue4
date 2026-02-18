@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { PrimaryButton } from "@/components/atoms/PrimaryButton";
+import githubIcon from "@/assets/github.svg";
+import qiitaIcon from "@/assets/qiita.png";
+import xIcon from "@/assets/x.png";
 
 export const UserCard = () => {
   const navigate = useNavigate();
@@ -83,7 +86,7 @@ export const UserCard = () => {
                       rel="noopener noreferrer"
                       data-testid="github-link"
                     >
-                      <img src="/src/assets/github.svg" width="40" />
+                      <img src={githubIcon} width="40" />
                     </a>
                   )}
                   {user?.qiitaId && (
@@ -93,7 +96,7 @@ export const UserCard = () => {
                       rel="noopener noreferrer"
                       data-testid="qiita-link"
                     >
-                      <img src="/src/assets/qiita.png" width="40" />
+                      <img src={qiitaIcon} width="40" />
                     </a>
                   )}
                   {user?.xId && (
@@ -103,7 +106,7 @@ export const UserCard = () => {
                       rel="noopener noreferrer"
                       data-testid="x-link"
                     >
-                      <img src="/src/assets/x.png" width="40" />
+                      <img src={xIcon} width="40" />
                     </a>
                   )}
                 </Flex>
