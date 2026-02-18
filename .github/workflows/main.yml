@@ -1,4 +1,4 @@
-name: test
+name: test and deploy
 on:   
     schedule:
       - cron: "0 6 * * *"
