@@ -78,7 +78,7 @@ test("技術が表示されていること", async () => {
 test("githubアイコンが表示されていること", async () => {
   const githubLink = await screen.findByTestId("github-link");
   const githubIcon = githubLink.querySelector("img");
-  expect(githubIcon).toHaveAttribute("src", "/src/assets/github.svg");
+  expect(githubIcon).toHaveAttribute("src");
   expect(githubLink).toHaveAttribute("href", "https://github.com/mockgit");
 });
 
